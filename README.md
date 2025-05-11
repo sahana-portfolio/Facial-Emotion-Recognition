@@ -26,15 +26,14 @@ Download `fer2013.csv` manually and place it in the root project folder.
 - Streamlit (if UI is included)
 
 ## 📂 Project Structure
-├── app.py # Main app (UI or interface)
-├── live_emotion_detector.py # Real-time emotion detection
-├── train_model.py # CNN training script
-├── csv_to_images.py # Converts CSV to image files
-├── dataset/ # FER-2013 CSV and generated images
-├── models/ # Trained CNN model
-├── images/ # Sample/test images
-└── README.md
-
+├── app.py                          # Streamlit app file
+├── model.h5                        # Trained CNN model for emotion detection
+├── requirements.txt                # List of dependencies
+├── README.md                       # Project documentation
+├── screenshots/                    # Folder containing UI screenshots
+│   └── ss-1.png                    # Screenshot of the running app
+└── utils/                          # (if any helper functions are used)
+    └── preprocessing.py            # (example)
 
 ## 🧠 How It Works
 
@@ -45,7 +44,7 @@ Download `fer2013.csv` manually and place it in the root project folder.
 
 ## 📸 Sample Output
 
-> *(Add a screenshot or GIF here if possible to show real-time detection)*
+> Replace ss-1.png with your actual filename if it's different.
 
 ## ✅ To Run the Project
 
