@@ -9,7 +9,7 @@ Download `fer2013.csv` manually and place it in the root project folder.
 
 
 ## 🚀 Features
-
+ 
 - Real-time emotion detection using webcam 🎥
 - CNN model trained on FER-2013 dataset
 - Live prediction overlay using OpenCV
