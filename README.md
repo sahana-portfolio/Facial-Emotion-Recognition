@@ -2,6 +2,11 @@
 
 This is a machine learning project that detects and classifies human facial expressions into emotions like **Happy**, **Sad**, **Angry**, **Surprised**, and more using a CNN-based model trained on the **FER-2013** dataset.
 
+## 📂 Dataset
+The `fer2013.csv` dataset used in this project can be downloaded from the link below:
+
+👉 [Download FER-2013 Dataset (Google Drive)](https://drive.google.com/file/d/1Y9Ccg5hKGNoBeUcJkdEJU4LViRhdODGr/view?usp=sharing )
+
 ## 🚀 Features
 
 - Real-time emotion detection using webcam 🎥
