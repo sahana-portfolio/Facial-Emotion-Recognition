@@ -5,7 +5,9 @@ This is a machine learning project that detects and classifies human facial expr
 ## 📂 Dataset
 The `fer2013.csv` dataset used in this project can be downloaded from the link below:
 
-👉 [Download FER-2013 Dataset (Google Drive)](https://drive.google.com/file/d/1Y9Ccg5hKGNoBeUcJkdEJU4LViRhdODGr/view?usp=sharing )
+👉 [FER-2013 dataset](https://www.kaggle.com/datasets/msambare/fer2013).  
+Download `fer2013.csv` manually and place it in the root project folder.
+
 
 ## 🚀 Features
 
