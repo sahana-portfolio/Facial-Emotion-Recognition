@@ -1,6 +1,5 @@
-# Facial Emotion Recognition 😄😠😢😲
-
-This is a machine learning project that detects and classifies human facial expressions into emotions like **Happy**, **Sad**, **Angry**, **Surprised**, and more using a CNN-based model trained on the **FER-2013** dataset.
+😄 Facial Emotion Recognition Web App
+A machine learning project that detects and classifies human facial expressions such as Happy, Sad, Angry, Surprised, and more, using a CNN model trained on the FER-2013 dataset. Built with Python, TensorFlow/Keras, and deployed using Streamlit.
 
 ## 📂 Dataset
 The `fer2013.csv` dataset used in this project can be downloaded from the link below:
@@ -23,43 +22,65 @@ Download `fer2013.csv` manually and place it in the root project folder.
 - OpenCV
 - TensorFlow / Keras
 - NumPy, Pandas
-- Streamlit (if UI is included)
+- Streamlit 
 
 ## 📂 Project Structure
-├── app.py                          # Streamlit app file
-├── model.h5                        # Trained CNN model for emotion detection
-├── requirements.txt                # List of dependencies
+Facial_Emotion_Recognition_Project/
+├── app.py                          # Streamlit UI app
+├── model.h5                        # Trained CNN model
+├── requirements.txt                # Dependencies
 ├── README.md                       # Project documentation
-├── screenshots/                    # Folder containing UI screenshots
-│   └── ss-1.png                    # Screenshot of the running app
-└── utils/                          # (if any helper functions are used)
-    └── preprocessing.py            # (example)
+│
+├── utils/                          # Helper functions
+│   └── preprocessing.py            # (optional)
+│
+├── screenshots/                    # App UI screenshots
+│   ├── ss-1.png                    # Screenshot 1 - App UI
+│   ├── ss-2.png                    # Screenshot 2 - Model Output
+│   └── ss-3.png                    # Screenshot 3 - Real-time Detection
+│
+├── csv_to_images.py                # Converts CSV dataset to image files
+├── train_model.py                  # CNN training script
+└── live_emotion_detector.py        # Real-time emotion detector using webcam
+
 
 ## 🧠 How It Works
+1.csv_to_images.py: Converts fer2013.csv into folders of images by emotion label.
 
-1. `csv_to_images.py` converts the FER-2013 CSV into image files sorted by emotion.
-2. `train_model.py` trains a CNN model on this image data.
-3. `live_emotion_detector.py` uses the webcam feed to predict emotions live.
-4. `app.py` provides a user interface (if implemented using Streamlit or Tkinter).
+2.train_model.py: Trains the CNN model on the converted images.
+
+3.live_emotion_detector.py: Launches webcam and predicts emotion live.
+
+4.app.py: Launches the Streamlit web interface for predictions.
 
 ## 📸 Sample Output
 
-> Replace ss-1.png with your actual filename if it's different.
+ Screenshot -1 (![ss-1](https://github.com/user-attachments/assets/b4851a60-e2c4-4974-bba7-9a2d25a73f8c)
+)
+screenshot-2 ![ss-2](https://github.com/user-attachments/assets/dfc74c24-0820-4dc3-a345-0e33966c215c)
+screenshot-3 ![ss-3](https://github.com/user-attachments/assets/1d37977e-25c1-4dbc-b825-296ce2c1468c)
+
+
+
 
 ## ✅ To Run the Project
 
-```bash
-# Step 1: Install dependencies
+# Step 1: Install required packages
 pip install -r requirements.txt
 
-# Step 2: Convert CSV to image dataset (run only once)
+# Step 2: Convert dataset to images (only once)
 python csv_to_images.py
 
-# Step 3: Train the model
+# Step 3: Train the CNN model
 python train_model.py
 
-# Step 4: Run real-time emotion detection
+# Step 4: Test real-time emotion detection
 python live_emotion_detector.py
+
+# Optional: Run the Streamlit UI app
+streamlit run app.py
+
+🙋 About Me
 
 Sahana L
 B.E. Computer Science | HKBK College of Engineering
